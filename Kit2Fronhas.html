@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrend</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .clothe_size{
+            border-radius: 10px;
+            margin: 0px 5px;
+        }
+        .clothe_size:hover{
+            border-color: #ffffff;
+            color: #ffffff;
+            background-color: #006600;
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+        .carousel-container {
+            height: 350px;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        header{
+            background-image: linear-gradient(#006600, green, green, green, #006600);
+        }
+        .carousel{
+            padding: 0px 200px 0px 200px;
+        }
+        .carousel-inner .carousel-item img {
+            height: 350px;
+            object-fit: cover;
+        }
+        .nav-item:hover{
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+        .cart-icon-container .img_cart{
+            height: 20px;
+            margin-bottom: 5px;
+        }
+        .cart-icon-container:hover .img_cart{
+            display: none;
+        }
+        .cart-icon-container .img_cart_hidden{
+            height: 20px;
+            margin-bottom: 5px;
+            display: none;
+        }
+        .cart-icon-container:hover .img_cart_hidden{
+            display: block;
+        }
+        .produto-card {
+            border: none;
+            transition: transform 0.3s;
+            width: 55%;
+        }
+        .produto-card:hover {
+            transform: scale(1.05);
+        }
+        .produto-card img {
+            object-fit: cover;
+            height: 200px;
+            width: 100%;
+        }
+        .btn:hover{
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+        .carousel-caption {
+            background: #00000080;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .lista_footer{
+            justify-content: center;
+            display: flex;
+            list-style: none;
+        }
+        .lista_footer li{
+            margin: 15px 10px 0px 10px;
+        }
+        .lista_footer li:hover{
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+        .lista_footer li a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .lista_footer li a:hover{
+            color: green
+        }
+        footer p{
+            font-size: 0.7rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-success text-white p-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1><a href="index.html" style="color: #ffffff; text-decoration: none;">EcoTrend</a></h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="categorias.html">Categorias</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="Contato.html">Contato</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">
+                            <div class="cart-icon-container">
+                                <img class="img_cart" src="./src/assets/shopping-cart-black.webp" alt="Cart">
+                                <img class="img_cart_hidden" src="./src/assets/shopping-cart-white.png" alt="Cart - Hover">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+
+    <section class="container mt-2" style="padding: 40px 0; text-align: center; margin-bottom: 125px;">
+        <h2 class="text-center mb-5">Kit 2 Fronhas - Algodão Orgânico</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+            <div class="col d-flex justify-content-center">
+                <div class="card produto-card h-100">
+                    <img src="./src/assets/Fronha.jpg" class="card-img-top" alt="Produto 1" style="height: 500px; width: 400px;">
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="card produto-card h-100">
+                    <div style="margin-top: 50px;" class="card-body text-center">
+                        <h5 class="card-title"></h5>
+                        <hr>
+                        <p style="margin-top: 20px;" class="card-text">R$119,00</p>
+                        <hr>
+                        <p style="margin-top: 20px;" class="card-text">O Kit Fronhas é composto por 2 unidades de fronhas feitas à mão, através dos resíduos de nossas malhas orgânicas.  O tecido excedente é cortado em quadrados ou retângulos e costurados com técnica de patchwork pelas mãos da costureira Day. Procuramos dar vida aos pedacinhos de tecidos que sobram do nosso Vestuário Orgânico e assim contribuir com a economia circular e apoiar a economia local. As estampas dos retalhos serão diferentes entre si, considerando um trabalho artesanal e único.</p>
+                        <hr>
+                        <a href="#" class="btn btn-success">+ Carrinho</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <div>
+            <ul class="lista_footer">
+                <li><a href="Contato.html">Contato</a></li>
+                <li><a href="termos.html">Termos e Condições</a></li>
+                <li><a href="politicas.html">Políticas de Privacidade</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2025 EcoTrend - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
