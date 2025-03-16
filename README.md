@@ -44,6 +44,7 @@ EcoTrend/
 │   │   ├── Fronha.jpg
 │   │   ├── shopping-cart-black.webp
 │   │   ├── shopping-cart-white.png
+
 Descrição das Páginas
 index.html: A página inicial é o ponto de entrada, apresentando um carrossel com banners promocionais e uma seção de "Produtos em Destaque" com sete itens, preços e botões "Adicionar ao Carrinho".
 politicas.html: A página de Políticas de Privacidade descreve como os dados dos usuários são coletados, usados e protegidos, seguindo requisitos legais comuns em e-commerce.
